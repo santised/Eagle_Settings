@@ -30,10 +30,10 @@ BRD:
 #Layer -2 -3 -4 -5 -6 -7 -8 -9 -10 -11 -12 -13 -14 -15
 
 #Setup SparkFun Defaults
-Grid inch 0.01 on;
-Grid alt inch 0.001;
+Grid inch 0.05 on;
+Grid alt inch 0.005;
 Set WIRE_BEND 1; #Route with 45 degree angles
-Set Drill 0.02; #Make vias 0.02"
+Set Drill 0.015; #Make vias 0.02"
 Change Shape Round; #Make vias round
 Change Width 0.01; #Routing width default to 10mil
 Change Isolate 0.012; #BHW Change polygon isolate to 12mil
@@ -56,8 +56,8 @@ layer 120 WFL_Ref;
 Set palette 16 0xFFFFFFFF; #Super white
 Set palette 24 0xFFC0C0C0; #Grey - color used when text is selected (anti palette location 16)
 Set color_layer 1 4;   #Set top layer to dark red
-Set color_layer 16 31;  #Set bottom layer to dark blue
-Set color_layer 17 30;  #Set pads to green
+Set color_layer 16 3;  #Set bottom layer to dark blue
+Set color_layer 17 26;  #Set pads to green
 Set color_layer 18 2;  #Set vias to green
 Set color_layer 19 6;  #Set unrouted to dark yellow
 Set color_layer 20 15; #Set dimension to light gray
