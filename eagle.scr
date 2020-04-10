@@ -4,15 +4,16 @@
 Assign A+M 'Move';
 Assign A+N 'Name';
 Assign A+S 'split';
-Assign A+F12 'info';
+Assign A+I 'info';
+Assign C+1 'Line';
 Assign C+3 'Dimension';
 Assign C+D 'Delete';
 Assign C+G 'Group';
 Assign C+C 'Copy';
 Assign C+S 'show';
 Assign C+T 'Text';
-Assign F5 'Value';
 Assign F6 'Smash';
+Assign F9 'Value';
 
 # Grids for Library and BRD work
 Assign F1 'Grid inch 0.05 on; Grid alt inch 0.005;';
@@ -75,8 +76,6 @@ Assign A+F5 'display none; display 1 17 18 19 20 23 24 39 45 49 51'; # Default d
 Assign A+F6 'display none; display 16 17 18 19 20 23 24 39 45 49 51'; # Default display without silk no top
 Assign F7 'display none; display 17 20 21 23 29 45 47'; # Displays a board with silk and pads
 
-Assign C+1 'Miter 0; Line'; 
-
 # Flips the board over
 Assign C+F 'Window Flip';
 
@@ -89,9 +88,7 @@ Change Size 0.05; #BHW Use 50mil flags (and text... exceeds minimum)
 Change XREF ON; #Change labels to XREF (Net label) 
 
 Assign C+R 'Net';
-Assign C+1 'Line';
 Assign A+L 'Label';
-Assign A+M 'Move';
 
 Grid Default;
 Change Width 0.008;
