@@ -12,6 +12,8 @@ Assign C+G 'Group';
 Assign C+C 'Copy';
 Assign C+S 'show';
 Assign C+T 'Text';
+Assign C+V 'Via';
+Assign A+P 'Polygon';
 Assign F6 'Smash';
 Assign F9 'Value';
 
