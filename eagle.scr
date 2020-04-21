@@ -7,6 +7,7 @@ Assign A+S 'split';
 Assign A+I 'info';
 Assign C+1 'Line';
 Assign C+3 'Dimension';
+Assign C+A 'Add';
 Assign C+D 'Delete';
 Assign C+G 'Group';
 Assign C+C 'Copy';
@@ -19,7 +20,7 @@ Assign F9 'Value';
 
 # Grids for Library and BRD work
 Assign F1 'Grid inch 0.05 on; Grid alt inch 0.005;';
-Assign F2 'Grid inch 0.001 on; Grid alt inch 0.01;';
+Assign F2 'Grid inch 0.01 on; Grid alt inch 0.001;';
 Assign F3 'Grid mm 1 on; Grid alt mm 0.05;';
 
 # Reserved for running custom ULP scripts.
