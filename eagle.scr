@@ -5,6 +5,7 @@ Assign A+M 'Move';
 Assign A+N 'Name';
 Assign A+S 'split';
 Assign A+I 'info';
+Assign A+V 'Via';
 Assign C+1 'Line';
 Assign C+3 'Dimension';
 Assign C+A 'Add';
@@ -13,7 +14,7 @@ Assign C+G 'Group';
 Assign C+C 'Copy';
 Assign C+S 'show';
 Assign C+T 'Text';
-Assign C+V 'Via';
+Assign C+V 'Paste';
 Assign A+P 'Polygon';
 Assign F6 'Smash';
 Assign F9 'Value';
@@ -78,6 +79,7 @@ Assign F6 'display none; display 1 16 17 18 19 20 23 24 39 45 49 51'; # Default 
 Assign A+F5 'display none; display 1 17 18 19 20 23 24 45 49 51'; # Default display without silk no bottom
 Assign A+F6 'display none; display 16 17 18 19 20 23 24 45 49 51'; # Default display without silk no top
 Assign F7 'display none; display 17 20 21 23 29 45 47'; # Displays a board with silk and pads
+Assign F10 'display all'; # Displays a board with silk and pads
 
 # Flips the board over
 Assign C+F 'Window Flip';
@@ -120,8 +122,6 @@ Set color_layer 24 15; #Set bOrigins to light gray
 Set color_layer 45 7;  #Set Holes to dark gray
 Set color_layer 51 6;  #Set tDocu to mellow yellow
 
-Assign F10 'Grid inch 0.05 on; Grid alt inch 0.005;';
-Assign AF10 'Grid mm 1 on; Grid alt mm 0.1;';
 Grid mm 1 on;
 Grid alt mm 0.1;
 
