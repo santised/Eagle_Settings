@@ -10,6 +10,7 @@ Assign C+1 'Line';
 Assign C+3 'Dimension';
 Assign C+A 'Add';
 Assign C+D 'Delete';
+Assign C+E 'Replace';
 Assign C+G 'Group';
 Assign C+C 'Copy';
 Assign C+S 'show';
