@@ -23,7 +23,7 @@ Assign F9 'Value';
 # Grids for Library and BRD work
 Assign F1 'Grid inch 0.05 on; Grid alt inch 0.005;';
 Assign F2 'Grid inch 0.01 on; Grid alt inch 0.001;';
-Assign F3 'Grid mm 1 on; Grid alt mm 0.05;';
+Assign F3 'Grid mm .5 on; Grid alt mm 0.01;';
 
 # Reserved for running custom ULP scripts.
 Assign F12 'run C:\Users\elias.santistevan\Documents\GitHub\Design_to_PnP_File_ULP\eagle_to_pnp.ulp';
@@ -79,7 +79,7 @@ Assign F5 'display none; display 1 16 17 18 19 20 21 22 23 24 45 49 51'; # Defau
 Assign F6 'display none; display 1 16 17 18 19 20 23 24 39 45 49 51'; # Default display without silk 
 Assign A+F5 'display none; display 1 17 18 19 20 23 24 45 49 51'; # Default display without silk no bottom
 Assign A+F6 'display none; display 16 17 18 19 20 23 24 45 49 51'; # Default display without silk no top
-Assign F7 'display none; display 17 20 21 23 29 45 47'; # Displays a board with silk and pads
+Assign F7 'display none; display 1 2 15 16 17 18 19 20 23 24 39 45 49 51'; # Default display without silk 
 Assign F10 'display all'; # Displays a board with silk and pads
 
 # Flips the board over
