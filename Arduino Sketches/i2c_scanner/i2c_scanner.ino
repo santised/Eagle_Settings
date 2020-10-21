@@ -1,13 +1,12 @@
 #include <Wire.h>
 
-
 void setup()
 {
   Wire.begin();
-  Serial.begin(115200);
+  SerialUSB.begin(115200);
 
-  while(!Serial){};
-  Serial.println("\nI2C Scanner");
+  while(!SerialUSB){};
+  SerialUSB.println("\nI2C Scanner");
 }
 
 
@@ -16,7 +15,8 @@ void loop()
   byte error, address;
   int nDevices;
 
-  Serial.println("Scanning...");
+  SerialUSB.println("Scanning...");
+  Wire.begin();
 
   nDevices = 0;
   for(address = 1; address < 127; address++ ) 
@@ -24,30 +24,32 @@ void loop()
     // The i2c_scanner uses the return value of
     // the Write.endTransmisstion to see if
     // a device did acknowledge to the address.
+    SerialUSB.print("Address: ");
+    SerialUSB.println(address);
     Wire.beginTransmission(address);
     error = Wire.endTransmission();
     if (error == 0)
     {
-      Serial.print("I2C device found at address 0x");
+      SerialUSB.print("I2C device found at address 0x");
       if (address<16) 
-        Serial.print("0");
-      Serial.print(address,HEX);
-      Serial.println("  !");
+        SerialUSB.print("0");
+      SerialUSB.print(address,HEX);
+      SerialUSB.println("  !");
 
       nDevices++;
     }
     else if (error==4) 
     {
-      Serial.print("Unknow error at address 0x");
+      SerialUSB.print("Unknow error at address 0x");
       if (address<16) 
-        Serial.print("0");
-      Serial.println(address,HEX);
+        SerialUSB.print("0");
+      SerialUSB.println(address,HEX);
     }    
   }
   if (nDevices == 0)
-    Serial.println("No I2C devices found\n");
+    SerialUSB.println("No I2C devices found\n");
   else
-    Serial.println("done\n");
+    SerialUSB.println("done\n");
 
   delay(5000);           // wait 5 seconds for next scan
 }
