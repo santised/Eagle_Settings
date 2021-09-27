@@ -35,7 +35,7 @@ Grid inch 0.05 on;
 Grid alt inch 0.005;
 Grid Dots;
 Set WIRE_BEND 1; #Route with 45 degree angles
-Set Drill 0.015; #Make vias 0.015"
+Set drill_menu 0.012 0.015; # Set the list of default vias to 0.012 and 0.015"
 Change Shape Round; # Make vias round
 Change Width 0.01; # Routing width default to 10mil
 Change Isolate 0.012; # BHW Change polygon isolate to 12mil
@@ -90,6 +90,10 @@ Assign F10 'display all'; # Displays a board with silk and pads
 
 # Flips the board over
 Assign C+F 'Window Flip';
+
+# Sets Single Layer Mode
+Assign C+L 'SET SINGLE_LAYER_MODE ON';
+Assign S+F1 'SET SINGLE_LAYER_MODE OFF';
 
 SCH:
 
